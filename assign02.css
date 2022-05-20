@@ -1,0 +1,452 @@
+
+*{margin:0; padding: 0; box-sizing: border-box;
+}
+
+/*--------BOOTSTRAP NAVEBAR---------*/
+
+nav{
+    background-color: rgb(154, 172, 175);
+}
+.navbar-brand{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*------------------------INNOVATION SECTION-----------------------*/
+
+.dv4{
+
+    width: 100%;
+    height: 70vh;
+    margin-top: 2%;
+    background-image: url('img/dv5.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+button{
+color: #fbfcfd;
+padding: 10px;
+background: transparent;
+border: 2px solid #fff;
+border-radius: 20px;
+width: 180px;
+outline: none;
+cursor:pointer;
+}
+
+.sani{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.bubl img{
+    width: 60px;
+    animation: bubl 3s linear infinite;
+    border-radius: 50%;
+}
+.bubl{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+ @keyframes bubl{
+     0%{
+         transform: translateY(0);
+         opacity: 0;
+     }
+     50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    0%{
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+
+ }
+
+ .circl img{
+    width: 60px;
+    animation: bubl 3s reverse infinite;
+    border-radius: 50%;
+}
+.circl{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+ @keyframes circle{
+     0%{
+         transform: translateY(0);
+         opacity: 0;
+     }
+     50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    0%{
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+
+ }
+
+/*------------------------JAVA  CLICK GALLERY-----------------------*/
+
+ .images{
+    background: linear-gradient(360deg,#fccdec,#d4f7bd,#b6c9fd);
+    padding: 10px;
+    margin: 60px ;
+ }
+ .images h2{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 40px;
+}
+ .img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+ .img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(66,77,136,0.2); 
+ }
+ .full-img{
+     width: 100%;
+     height: 100vh;
+     background: rgba(0,0,0,0.9);
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: none;
+     align-items: center;
+     justify-content: center;
+     z-index: 100;
+ }
+ .full-img img{
+     width: 90%;
+     max-width: 500px;
+ }
+ .full-img span{
+     position: absolute;
+     top: 5%;
+     right: 5%;
+     font-size: 30px;
+     color: #fff;
+     cursor: pointer;
+ }
+
+/*------------------------JAVA VALIDATION FORM-----------------------*/
+
+.FORM{
+    background: linear-gradient(360deg,#354b5f,#d4f7bd,#354b5f);
+    padding: 20px;
+    margin: 60px ;
+}
+.FORM h1{
+     font-weight: bold;
+     font-style: italic;
+     padding: 15px;
+     font-size: 35px;
+     color: white;
+}
+
+.FORM_DIV {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    width: 700px;
+    max-width: 100%;
+    /* box-shadow: 0 0 10px 1px rgba(61, 61, 61, 0.19), 0 0 15px 1px rgba(63, 63, 63, 0.23); */
+}
+.FORM_DIV .complete {
+    visibility: hidden;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.form {
+    margin-bottom: 10px;
+    position: relative;
+}
+.form label {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.form input {
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid rgb(13, 141, 173);
+    font-family: inherit;
+}
+
+.form i {
+    position: absolute;
+    top: 29px;
+    right: 10px;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form.success input {
+    border: 2px solid green;
+}
+
+.form .success .fa-smile-o {
+    color: green;
+    visibility: visible;
+}
+
+@keyframes inputMove {
+    0% {
+        transform: translateX(5px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.form .error input {
+    border: 2px solid rgb(219, 19, 29);
+    animation-name: inputMove;
+    animation-duration: .5s;
+   
+}
+
+.form .error .fa-frown-o {
+    color: rgb(219, 19, 29);
+    visibility: visible;
+}
+
+.form .complete .fa {
+    visibility: hidden;
+}
+
+.form .errorMessage {
+    visibility: hidden;
+    margin: 2px 0 12px 0;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.form .error .errorMessage {
+    visibility: visible;
+    color: rgb(219, 19, 29);
+}
+
+button {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(20, 163, 219);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 2px solid rgb(20, 163, 219);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: rgb(226, 43, 156);
+    border: 2px solid rgb(226, 43, 134);
+    background: transparent;
+}
+
+.CLASSFORM {
+    visibility: hidden;
+    position: fixed;
+    top: 45%;
+    left: 41%;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    color: green;
+    text-align: center;
+}
+
+.FORM_DIV .complete .CLASSFORM {
+    visibility: visible;
+}
+
+/*------------------------JAVA SELECTED IMAGES-----------------------*/
+
+.click_container{
+  background-color: rgba(153, 187, 90, 0.541) ;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px ;
+
+}
+.product_img img{
+    height: 300px;
+    width: 350px;
+    margin: 10px 30px;
+    cursor: pointer;
+    display: block; 
+    padding: 15px;
+}
+.product_img {
+    float: left;
+    flex-wrap: wrap;
+}
+.product h1{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.product{
+    
+    margin-top: 50px;
+   margin-left: 50px;
+    position: relative;
+}
+.img_container img{
+    height: 700px;
+    width: 500px;
+}
+.img_container h1{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+}
+.img_container{
+    background-color: rgba(124, 151, 107, 0.842);
+    float: right;
+    padding:30px;
+    margin: 50px ;
+
+}
+
+/*------------------------BOOTSRAP SLIDER----------------------*/
+.botstrap_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px ;
+}
+
+/*------------------------FOOTER----------------------*/
+
+ footer{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #010615;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 30px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   
+
+
